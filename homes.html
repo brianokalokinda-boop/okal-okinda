@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Navigation Bar with Search</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: aqua;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fa49b3;
+      padding: 10px;
+    }
+    .navbar a {
+      color: rgb(156, 62, 62);
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 16px;
+    }
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+    .search-container {
+      display: flex;
+      align-items: center;
+    }
+    .search-container input[type="text"] {
+      padding: 5px;
+      font-size: 14px;
+      border: none;
+      border-radius: 3px;
+    }
+    .search-container button {
+      padding: 5px 10px;
+      margin-left: 5px;
+      border: none;
+      border-radius: 3px;
+      background-color: #555;
+      color: white;
+      cursor: pointer;
+    }
+    .search-container button:hover {
+      background-color: #777;
+    }
+
+    /* House layout */
+    .house-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .house-card {
+      width: 250px;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 10px;
+    }
+    .house-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+    .house-card h3 {
+      margin: 10px 0 5px;
+      color: #2c3e50;
+    }
+    .house-card p {
+      margin: 5px 0;
+    }
+    .price {
+      font-weight: bold;
+      color: #27ae60;
+    }
+    .location {
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="navbar">
+    <!-- Navigation links -->
+    <div>
+      <a href="homes.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="help.html">Help</a>
+    </div>
+
+    <!-- Search bar -->
+    <div class="search-container">
+      <input type="text" placeholder="Search...">
+      <button type="submit">Search</button>
+    </div>
+  </div>
+
+  <h2>Welcome To Slobadan Homes</h2>
+  <p>Explore your house here and live your desired life</p>
+
+  <!-- House Listings -->
+  <div class="house-container">
+    <!-- House 1 -->
+    <div class="house-card">
+      <img src="images/house 4.jpeg" alt="Modern House">
+      <h3>Morden House</h3>
+      <p class="price">$1200 / month</p>
+      <p class="location">📍 Dallas Estate, Embu</p>
+      <a href="morden.html">View Morden</a>
+    </div>
+
+    <!-- House 2 -->
+    <div class="house-card">
+      <img src="images/house 5.jpeg" alt="Luxury Villa">
+      <h3>luxury</h3>
+      <p class="price">$2300 / month</p>
+      <p class="location">📍 Blue Valley, Embu</p>
+      <a href="luxury.html">View luxury</a>
+    </div>
+
+    <!-- House 3 -->
+    <div class="house-card">
+      <img src="images/house 6.jpeg" alt="Cozy Cottage">
+      <h3>Cozy Cottage</h3>
+      <p class="price">$3480 / month</p>
+      <p class="location">📍 Kangaru, Embu</p>
+      <a href="cozzy.html">View Cozzy</a>
+    </div>
+  </div>
+
+</body>
+</html>
